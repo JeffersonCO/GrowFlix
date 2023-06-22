@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background-color: black;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+header{
+    background: url(./assets/growcast-01.png) center top/cover no-repeat fixed;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+span{
+    color: white;
+}
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.row-home-growcast {
+    align-items: flex-end;
+    min-height: 680px;
+}
