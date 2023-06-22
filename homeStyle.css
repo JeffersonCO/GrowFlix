@@ -18,15 +18,45 @@ span{
     width: 25%
 }
 .row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
 }
 .row-home-growcast {
     align-items: flex-end;
     min-height: 680px;
 }
+.detail-hover{
+    margin-top: 20px;
+    position: absolute;
+    width: 350px;
+    background-color: black;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.modal-fullscreen .modal-footer, .modal-fullscreen .modal-header {
+    border-radius: 0;
+}
+
+.modal-header-movie {
+    border-bottom: none;
+    
+}
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    outline: 0;
+}
+
